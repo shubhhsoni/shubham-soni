@@ -461,14 +461,15 @@ function Hero() {
           >
             View My Work
           </a>
-          <button
-            type="button"
+          <a
+            href="/resume.docx"
+            download="Shubham_Soni_Resume.docx"
             data-ocid="hero.secondary_button"
             className="inline-flex items-center gap-2 px-7 py-3.5 rounded-full font-semibold text-sm glass-btn text-white"
           >
             <Download size={16} />
             Download CV
-          </button>
+          </a>
         </div>
 
         {/* Scroll hint */}
@@ -901,17 +902,6 @@ function Footer() {
           </a>
         </div>
 
-        <p className="text-[#6E6E6E] text-xs text-center">
-          © {year}. Built with ❤️ using{" "}
-          <a
-            href={`https://caffeine.ai?utm_source=caffeine-footer&utm_medium=referral&utm_content=${encodeURIComponent(hostname)}`}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-[#9A9A9A] hover:text-white transition-colors"
-          >
-            caffeine.ai
-          </a>
-        </p>
       </div>
     </footer>
   );
